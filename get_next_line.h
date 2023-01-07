@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 20:12:22 by hualhash          #+#    #+#             */
-/*   Updated: 2023/01/05 19:49:22 by hualhash         ###   ########.fr       */
+/*   Updated: 2023/01/07 20:33:48 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <fcntl.h>
+# include <limits.h>
 
 char	*get_next_line(int fd);
 
