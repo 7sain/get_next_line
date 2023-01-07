@@ -19,7 +19,8 @@ int	main()
 	while (nline != NULL)
 	{
 		// write(1,"@", 1);
-		ft_putstr_fd(nline, 1);
+		printf("%s", nline);
+		free(nline);
 		nline = get_next_line(fd);
 	}
 	return(fd);
