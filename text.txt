@@ -1,0 +1,113 @@
+-----------------
+value of s is: \\what inside file
+ >>>
+1111
+2222
+3333
+4444
+<<<
+
+value of ptr is: \\after get_line{return first line.}
+ {>>>}
+1111
+
+{<<<}
+
+value of new S is: \\after ft_cut(line deleted.)
+ (><)
+2222
+3333
+4444
+(><)
+-----------
+all process:
+
+value of s is:
+ >>>
+1111
+2222
+3333
+4444
+<<<
+
+value of ptr is:
+ {>>>}
+1111
+
+{<<<}
+
+value of new S is:
+ (><)
+2222
+3333
+4444
+(><)
+1111
+
+value of s is:
+ >>>
+2222
+3333
+4444
+<<<
+
+value of ptr is:
+ {>>>}
+2222
+
+{<<<}
+
+value of new S is:
+ (><)
+3333
+4444
+(><)
+2222
+
+value of s is:
+ >>>
+3333
+4444
+<<<
+
+value of ptr is:
+ {>>>}
+3333
+
+{<<<}
+
+value of new S is:
+ (><)
+4444
+(><)
+3333
+
+value of s is:
+ >>>
+4444
+<<<
+
+value of ptr is:
+ {>>>}
+4444
+{<<<}
+
+value of new S is:
+ (><)
+(null)
+(><)
+4444
+value of s is:
+ >>>
+
+<<<
+
+value of ptr is:
+ {>>>}
+(null)
+{<<<}
+
+value of new S is:
+ (><)
+(null)
+(><)
