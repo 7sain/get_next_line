@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/04 20:11:14 by hualhash          #+#    #+#             */
-/*   Updated: 2023/01/14 19:58:52 by hualhash         ###   ########.fr       */
+/*   Created: 2023/01/14 21:32:47 by hualhash          #+#    #+#             */
+/*   Updated: 2023/01/14 21:37:53 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*read_file(int fd, char *s)
 {
@@ -42,13 +42,13 @@ char	*read_file(int fd, char *s)
 
 char	*get_next_line(int fd)
 {
-	static char	*s;
+	static char	*s[1024];
 	char		*ptr;
 
 	if (BUFFER_SIZE <= 0 || fd < 0 || BUFFER_SIZE > INT_MAX)
 		return (NULL);
-	s = read_file(fd, s);
-	ptr = get_line(s);
-	s = ft_cut(s);
+	s[fd] = read_file(fd, s[fd]);
+	ptr = get_line(s[fd]);
+	s[fd] = ft_cut(s[fd]);
 	return (ptr);
 }
