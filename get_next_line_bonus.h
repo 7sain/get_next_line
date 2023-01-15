@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 21:34:17 by hualhash          #+#    #+#             */
-/*   Updated: 2023/01/14 21:34:34 by hualhash         ###   ########.fr       */
+/*   Updated: 2023/01/15 23:53:18 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 42
+#  define BUFFER_SIZE 500
 # endif
 
 # include <unistd.h>

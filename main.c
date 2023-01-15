@@ -1,18 +1,19 @@
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	main()
 {
 	int		fd;
+	int		fdk;
 	char	*nline;
+	char	*nlinek;
 
-	fd = open("out.txt", O_RDONLY); 
-	nline = get_next_line(fd);
-	while (nline != NULL)
-	{
+	fd = open("test.txt", O_RDONLY);
+	fdk = open("test2.txt", O_RDONLY);
 		// write(1,"@", 1);
-		printf("%s", nline);
-		free(nline);
-		nline = get_next_line(fd);
-	}
-	return(fd);
+		nlinek = get_next_line(fd);
+		nline = get_next_line(fdk);
+		printf("<<%s>>", nline);
+		printf("%s", nlinek);
+	close(fd);
+
 }
